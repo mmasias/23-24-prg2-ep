@@ -1,8 +1,8 @@
-# Repo plantilla para exámenes [PRG1|EDA1|IDSW1]@gII.uneatlantico
+# PRG2 - Examen parcial
 
 ## Enunciado del examen
 
-En el repo de la asignatura, carpeta **/evaluaciones**, apartado del examen correspondiente.
+- [Enunciado](enunciado.md)
 
 ## Entrega del examen
 
