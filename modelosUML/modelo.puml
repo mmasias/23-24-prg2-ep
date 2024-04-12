@@ -1,0 +1,34 @@
+@startuml
+
+class Asignatura {
+    - nombre: String
+    - creditos: int
+    - acronimo: String
+    + Asignatura()
+    + Asignatura(String, int)
+    + Asignatura(String, int, String)
+    + mostrarAsignatura()
+}
+
+class Examen {
+    - pregunta1: String
+    - pregunta2: String
+    - pregunta3: String
+    + Examen(String, String, String)
+    + verPreguntas()
+}
+
+class Profesor {
+    - nombre: String
+    - asignatura: Asignatura
+    - nie: String
+    - dni: String
+    + Profesor(String, Asignatura, String)
+    + Profesor(String, String)
+    + verProfesor()
+}
+
+Profesor "1" -- "1..*" Asignatura
+Profesor "1" -- "1" Examen
+
+@enduml
