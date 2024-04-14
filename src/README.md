@@ -11,8 +11,28 @@
 ```
 {
     public void catedratico;
-    public id;
+    public void id;
 }
 ```
 
-Entre otras
+```
+{
+    public void materia;
+    public void abreviatura;
+}
+```
+
+```
+{
+    public void ingresarExamen;
+}
+```
+
+```
+{
+    public void supervisor;
+    public void identificacion;
+}
+```
+
+---
