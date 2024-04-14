@@ -1,0 +1,25 @@
+```plantuml
+@startuml
+
+class asignatura {
+    - nombreAsignatura: String
+    - id: String
+    - créditos: int
+}
+
+class examen {
+    - nombreExamen: String
+    - asignatura: asignatura
+    - profesor: profesores
+    - preguntas: String
+}
+
+class profesores {
+    - nombreProfesor: String
+    - nie: String
+}
+
+examen -- asignatura
+examen -- profesores
+
+@enduml
