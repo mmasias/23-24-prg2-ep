@@ -1,3 +1,5 @@
+package naranjoDylan;
+
 public class examen {
     private String nameExamen;
     private asignatura asignatura;

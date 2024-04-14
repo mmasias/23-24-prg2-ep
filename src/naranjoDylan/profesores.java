@@ -1,3 +1,5 @@
+package naranjoDylan;
+
 public class profesores {
     private String nameProfesores;
     private String nie;
