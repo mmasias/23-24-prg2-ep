@@ -58,10 +58,8 @@ public class Subject {
         Subject asignatura1 = new Subject("Ética", 4);
         asignatura1.show();
         asignatura1.editName("Filosofía");
+        asignatura1.editCredits(6);
         asignatura1.show();
-
-
-
 
     }
 }
