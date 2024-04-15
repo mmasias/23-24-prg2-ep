@@ -8,8 +8,8 @@ public class Profesor {
     public String getNombre() {
         return name;
     }
-    public void setNombre(String nombre) {
-        this.name = nombre;
+    public void setNombre(String name) {
+        this.name = name;
     }
     public String getDni() {
         return dni;
@@ -29,6 +29,9 @@ public class Profesor {
         this.dniType = dniType;
     }
     public Profesor() {
+    }
+    public Profesor(String string, String string2) {
+        //TODO Auto-generated constructor stub
     }
 
 }

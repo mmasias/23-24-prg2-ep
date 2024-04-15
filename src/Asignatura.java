@@ -6,8 +6,8 @@ public class Asignatura{
     public String getNombre() {
         return name;
     }
-    public void setNombre(String nombre) {
-        this.name = nombre;
+    public void setNombre(String name) {
+        this.name = name;
     }
     public int getCreditos() {
         return creditos;

@@ -6,9 +6,9 @@ public class Main {
 
 
         Preguntas p = new Preguntas();
-        p.setPregunta1("Vista pública de clases");
-        p.setPregunta2("Vista pública de objetos");
-        p.setPregunta3("Vista privada de clases");
+        p.setAsignatura1("Vista pública de clases");
+        p.setAsignatura2("Vista pública de objetos");
+        p.setAsignatura3("Vista privada de clases");
 
         Examen examen = new Examen("Examen Parcial", p, new ProfesorVigilante("Loyda Alas", "433452A"));
         System.out.println("Nombre del profesor: " + asignatura.getProfesor().getNombre() + " - NIE " + asignatura.getProfesor().getDni());
