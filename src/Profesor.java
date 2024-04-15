@@ -10,3 +10,6 @@ public class Profesor{
         return profesor;
     }
 }
+public static void main(String[] args) {
+    Profesor profesor = new Profesor("Manuel Masías", "666999XY");    
+}

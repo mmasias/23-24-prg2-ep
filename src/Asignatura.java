@@ -11,3 +11,6 @@ public class Asignatura{
         this.creditos = creditos;
     }
 }
+public static void main(String[] args) {
+    Asignatura asignatura = new Asignatura("Programación 2");    
+}
