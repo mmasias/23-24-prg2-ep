@@ -36,14 +36,16 @@ public class Subject {
     }
 
     public void show(){
-        System.out.println("Nombre: " + name);
-        System.out.println("Código: " + code);
-        System.out.println("Créditos: " + credits);
+        System.out.println("Asignatura: " + name + " - " + code + " - " + credits);
     }
 
     public void editName(String newName){
         String tempName = newName;
         this.name = tempName;
+        
+        String updatedCode = name.substring(0, Math.min(name.length(), 4));
+        updatedCode = updatedCode.toUpperCase();
+        this.code = updatedCode;
 
     }
     public void editCredits(int newCredits){
@@ -51,4 +53,15 @@ public class Subject {
         this.credits = tempCredits;
     }
     
+    public static void main(String[] args) {
+        
+        Subject asignatura1 = new Subject("Ética", 4);
+        asignatura1.show();
+        asignatura1.editName("Filosofía");
+        asignatura1.show();
+
+
+
+
+    }
 }
