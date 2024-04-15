@@ -35,8 +35,17 @@ public class Subject {
         return code;
     }
 
-    public void show(){}
-    public void editName(String name){}
-    public void editCredits(int credits){}
+    public void show(){
+        System.out.println("Nombre: " + name);
+        System.out.println("Código: " + code);
+        System.out.println("Créditos: " + credits);
+    }
+
+    public void editName(String newName){
+
+    }
+    public void editCredits(int newCredits){
+        
+    }
     
 }
