@@ -1,4 +1,10 @@
 public class Pregunta{
-    public Pregunta(String pregunta) {}    
-    public Pregunta cambiarPregunta(Pregunta pregunta) {}
+    private String pregunta;
+
+    public Pregunta(String pregunta) {
+        this.pregunta = pregunta;
+    }    
+    public Pregunta cambiarPregunta(Pregunta pregunta) {
+        return pregunta;
+    }
 }
