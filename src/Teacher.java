@@ -11,7 +11,9 @@ public class Teacher {
         this(name, "");
     }
 
-    public void show(){}
+    public void show(){
+        System.out.println("Profesor: " + name + "- Id: " + id);
+    }
     public void editName(String name){}
     public void editId(String id){}
     public void addSubject(Subject subject){}
