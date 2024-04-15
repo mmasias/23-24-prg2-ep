@@ -42,10 +42,13 @@ public class Subject {
     }
 
     public void editName(String newName){
+        String tempName = newName;
+        this.name = tempName;
 
     }
     public void editCredits(int newCredits){
-        
+        int tempCredits = newCredits;
+        this.credits = tempCredits;
     }
     
 }
