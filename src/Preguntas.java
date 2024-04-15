@@ -28,7 +28,7 @@ public class Preguntas {
         this.asignatura3 = asignatura3;
     }
     public Preguntas() {
-        //TODO Auto-generated constructor stub
+        
     }
     public String mostrarPreguntas(){
         return "Pregunta 1: ´´" + asignatura1 + "´´" + "\n" + "Pregunta 2: ´´" + asignatura2 + "´´" + "\n"+ "Pregunta 3: ´´" + asignatura3 + "´´";

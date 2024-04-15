@@ -1,7 +1,5 @@
 public class Examen {
-    
-}
-private String nombre;
+    private String nombre;
     private Preguntas preguntas;
     private ProfesorVigilante profeVigilante;;
     public String getNombre() {
@@ -21,7 +19,7 @@ private String nombre;
     }
 
     public Examen(String string, Preguntas p) {
-        //TODO Auto-generated constructor stub
+        
     }
 
     public Preguntas getPreguntas() {
@@ -44,3 +42,5 @@ private String nombre;
     return "Examen: " + getNombre() + " / Vigilado por Profª.: " + profeVigilante.getName() 
     + " - DNI " + profeVigilante.getDocumentNumber() + "\n" + preguntas.mostrarPreguntas();
     }
+
+}

@@ -22,7 +22,7 @@ public class Asignatura{
         this.profesor = profesor;
     }
     public Asignatura() {
-        //TODO Auto-generated constructor stub
+        
     }
     public Profesor getProfesor() {
         return profesor;

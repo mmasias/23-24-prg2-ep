@@ -31,7 +31,7 @@ public class Profesor {
     public Profesor() {
     }
     public Profesor(String string, String string2) {
-        //TODO Auto-generated constructor stub
+        
     }
 
 }
