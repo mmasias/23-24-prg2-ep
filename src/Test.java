@@ -49,13 +49,12 @@ class Test {
     public String show() {
         String test = "";
 
-        for (int quantityOfQuestions = 0; quantityOfQuestions < questionCount; quantityOfQuestions++){
+        for (int quantityOfQuestions = 0; quantityOfQuestions < questionCount; quantityOfQuestions++) {
             test = test + "\n      " + questions[quantityOfQuestions].show();
         }
 
-        String toPrint = 
-            "    Examen: Examen " + type + " / Viilado por prof.: " + keeper.show() + 
-            test;
+        String toPrint = "    Examen: Examen " + type + " / Viilado por prof.: " + keeper.show() +
+                test;
         return toPrint;
     }
 }
