@@ -1,4 +1,4 @@
-package ExamenParcial;
+package Examen Parcial;
 
 public class Asignatura {
     public Asignatura(String clase,Profesor profesor,Intervalo horario)
