@@ -13,9 +13,15 @@ public class Teacher {
     }
 
     public void show(){
-        System.out.println("Profesor: " + name + "- Id: " + id);
-        subject.show();
+        System.out.println("Profesor: " + name + "- Id: " + id); 
+       if (subject != null) {
+            subject.show();
+       } else{
+            
+       }
+        
     }
+
     public void editName(String newName){
         String tempName = newName;
         this.name = tempName;

@@ -21,8 +21,7 @@ public class Test{
     }
 
     public void show(){
-        System.out.println("Examen: " + type + "- Valor en la nota final: " + percentageScore + " / Vigilado por Prof." + teacher);
-        System.out.println("Preguntas: ");
+        System.out.println("Examen: " + type + "- Valor en la nota final: " + percentageScore + " / Vigilado por Prof."); teacher.show();
         System.out.println("Preguntas: ");
         for (int i = 0; i < numQuestions; i++) {
             System.out.print((i + 1) + ". ");
@@ -42,5 +41,20 @@ public class Test{
             questions[numQuestions] = question; 
             numQuestions++; 
         } 
+    }
+
+    public static void main(String[] args) {
+        Teacher teacher = new Teacher("Bryan Baquedano");
+        Test examen1 = new Test("Examen Parcial", "25%", teacher);
+        
+        Question pregunta1 = new Question("¿Que opinas de la muerte?");
+        Question pregunta2 = new Question("¿Quien quieres llegar a ser?");
+        Question pregunta3 = new Question("¿Quién escribió Humano, Demasiado Humano", new String[]{"Nietzsche", "Descartes", "Shoppenhauer", "Kant"});
+        
+        examen1.addQuestion(pregunta1);
+        examen1.addQuestion(pregunta2);
+        examen1.addQuestion(pregunta3);
+    
+        examen1.show();
     }
 }
