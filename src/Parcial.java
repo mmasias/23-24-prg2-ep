@@ -26,7 +26,7 @@ class Teacher {
         
     }
 
-    public Boolean isMainTeacher(Subject subject){
+    public Boolean isNie (String id){
         
     }
 
