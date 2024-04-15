@@ -60,9 +60,9 @@ class Subject {
 
     public String show() {
         String toPrint = 
-            teacher + "\n" +
-            "Asignatura: " + name + " - " + code + " - " + credits + " creditos" + "\n" +
-            test;
+            "Nombre del profesor" + teacher.show() + "\n" +
+            "  Asignatura: " + name + " - " + code + " - " + credits + " creditos" + "\n" +
+            test.show();
         return toPrint;
     }
 }

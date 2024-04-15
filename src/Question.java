@@ -35,6 +35,7 @@ class Question {
     }
 
     public String show() {
-        return "Pregunta " + number + ": '" + instructions + "'";
+        String toPrint = "Pregunta " + number + ": '" + instructions + "'";
+        return toPrint;
     }
 }

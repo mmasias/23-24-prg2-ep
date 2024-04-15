@@ -50,9 +50,12 @@ class Test {
         String test = "";
 
         for (int quantityOfQuestions = 0; quantityOfQuestions < questionCount; quantityOfQuestions++){
-            test = test + questions[quantityOfQuestions] + "\n";
+            test = test + "\n      " + questions[quantityOfQuestions].show();
         }
 
-        return type + " - " + keeper + "\n" + test;
+        String toPrint = 
+            "    Examen: Examen " + type + " / Viilado por prof.: " + keeper.show() + 
+            test;
+        return toPrint;
     }
 }

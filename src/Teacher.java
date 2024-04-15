@@ -31,6 +31,7 @@ class Teacher {
     }
 
     public String show() {
-        return "Nombre del profesor: " + name + " - " + id;
+        String toPrint = name + " - " + id;
+        return toPrint;
     }
 }
