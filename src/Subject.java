@@ -53,7 +53,7 @@ class Subject {
 
     public Test addTest(Test test) {
         assert test != null;
-        
+
         this.test = test;
         return test;
     }
