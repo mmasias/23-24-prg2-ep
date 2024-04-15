@@ -15,16 +15,27 @@ public class Subject {
     }
     
     public Subject(String name, int credits){
-        this(name, "", credits);
+        this.name = name;
+        this.code = createCode(name);
+        this.credits = credits;
+        
     }
     public Subject(String name){
-        this(name, "", 0);
+        this.name = name;
+        this.code = createCode(name);
+        this.credits = 0;
+    }
+
+    
+    public String createCode(String name){
+        assert name != null && !name.isEmpty() : "El nombre no puede ser nulo o vacío";
+        String code = name.substring(0, Math.min(name.length(), 4));
+        code = code.toUpperCase();
+        this.code = code;
+        return code;
     }
 
     public void show(){}
-    public String createCode(String name){
-        return "a";
-    }
     public void editName(String name){}
     public void editCredits(int credits){}
     
