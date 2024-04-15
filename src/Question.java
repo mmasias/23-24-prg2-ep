@@ -27,12 +27,11 @@ public class Question{
     }
 
     public void edit(String newQuestion) {
-        
         String tempQuestion = newQuestion;
         this.question = tempQuestion;
     }
 
-    
+
     public void editOptions(String question, String[] options){}
 
 }
