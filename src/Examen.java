@@ -1,3 +1,7 @@
-public class Examen{   
-    public Examen(String nombreAsignatura) {}
+public class Examen{ 
+    private String nombreAsignatura;
+
+    public Examen(String nombreAsignatura) {
+        this.nombreAsignatura = nombreAsignatura;
+    }
 }
