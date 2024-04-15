@@ -28,7 +28,7 @@ class Question {
         this.number = number;
     }
 
-    public void editInstruccions(String instructions) {
+    public void editInstructions(String instructions) {
         assert instructions != null;
 
         this.instructions = instructions;

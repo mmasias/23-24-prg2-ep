@@ -7,7 +7,7 @@ class Subject {
     private Test test;
 
     public Subject(String name, String code, int credits) {
-        assert name != null && code.length() == 4 && credits >= 0;
+        assert name != null && name.length() >= 3 && code.length() == 4 && credits >= 0;
 
         this.name = name;
         this.code = code;
@@ -59,6 +59,10 @@ class Subject {
     }
 
     public String show() {
-        return "Asignatura: " + name + " - " + code + " - " + credits + " creditos";
+        String toPrint = 
+            teacher + "\n" +
+            "Asignatura: " + name + " - " + code + " - " + credits + " creditos" + "\n" +
+            test;
+        return toPrint;
     }
 }
