@@ -1,6 +1,17 @@
-package Examen Parcial;
+package ExamenParcial;
 
 public class Preguntas {
-    public Preguntas(int numeroPreguntas,String pregunta)
-    
+    private String[] preguntas;
+
+    public Preguntas(String[] preguntas) {
+        this.preguntas = preguntas;
+    }
+
+    public int getNumeroPreguntas() {
+        return preguntas.length;
+    }
+
+    public String[] getPreguntas() {
+        return preguntas;
+    }
 }
