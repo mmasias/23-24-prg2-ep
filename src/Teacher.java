@@ -14,7 +14,16 @@ public class Teacher {
     public void show(){
         System.out.println("Profesor: " + name + "- Id: " + id);
     }
-    public void editName(String name){}
-    public void editId(String id){}
+    public void editName(String newName){
+        String tempName = newName;
+        this.name = tempName;
+        
+    }
+    public void editId(String newId){
+        String tempId = newId;
+        this.id = tempId;
+
+    }
+    
     public void addSubject(Subject subject){}
 }
