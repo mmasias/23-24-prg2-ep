@@ -1,19 +1,20 @@
 public class Exam {
     private String header;
     private String[] questions;
+    private Professor professor;
 
-    public Exam(String header) {
+    public Exam(String header, Professor professor) {
         this.header = header;
         this.questions = new String[3];
+        this.professor = professor;
     }
 
     public String header() {
         return this.header;
     }
 
-    public Question[] add(int number, String question) {
+    public void add(int number, String question) {
         questions[number - 1] = question;
-        return null;
     }
 
     public int number() {
@@ -25,7 +26,7 @@ public class Exam {
     }
 
     public Professor responsable() {
-        return null;
+        return this.professor;
     }
 
     public String showQuestion() {

@@ -1,6 +1,7 @@
 public class Professor {
     private String name;
     private String id;
+    private Subject subject;
 
     public Professor(String name, String id) {
         this.name = name;
@@ -19,7 +20,11 @@ public class Professor {
         System.out.println(this.name + " " + this.id);
     }
 
-    public Subject assign() {
-        return null;
+    public void assign(Subject subject) {
+        this.subject = subject;
+    }
+
+    public Subject getSubject() {
+        return this.subject;
     }
 }
