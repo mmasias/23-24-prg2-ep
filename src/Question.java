@@ -1,21 +1,21 @@
-public class Question{
+public class Question {
 
     private String question;
     private String[] options;
 
-    public Question(String question){
+    public Question(String question) {
         this.question = question;
         this.options = new String[0];
     }
 
-    public Question(String question, String[] options){
+    public Question(String question, String[] options) {
         this.question = question;
         this.options = options;
     }
 
     public void show() {
         System.out.println("Pregunta: " + question);
-        
+
         if (options.length > 0) {
             System.out.println("Opciones:");
             for (int i = 0; i < options.length; i++) {
@@ -29,7 +29,6 @@ public class Question{
         this.question = tempQuestion;
     }
 
-
     public void editOptions(String newQuestion, String[] newOptions) {
         String[] tempOptions = newOptions;
         this.question = newQuestion;
@@ -40,14 +39,16 @@ public class Question{
 
         Question pregunta1 = new Question("¿Que opinas de la muerte?");
         pregunta1.show();
-        
+
         Question pregunta2 = new Question("¿Quien eres?");
         pregunta2.show();
         pregunta2.edit("¿Quien quieres llegar a ser?");
         pregunta2.show();
 
-        Question pregunta3 = new Question("¿Quién escribió Humano, Demasiado Humano", new String[]{"Nietzsche", "Descartes", "Shoppenhauer", "Kant"});
-        pregunta3.editOptions("¿Quién escribió Humano, Demasiado Humano", new String[]{"Nietzsche", "Hume", "Shoppenhauer", "Kant"});
+        Question pregunta3 = new Question("¿Quién escribió Humano, Demasiado Humano",
+                new String[] { "Nietzsche", "Descartes", "Shoppenhauer", "Kant" });
+        pregunta3.editOptions("¿Quién escribió Humano, Demasiado Humano",
+                new String[] { "Nietzsche", "Hume", "Shoppenhauer", "Kant" });
         pregunta3.show();
     }
 
