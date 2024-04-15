@@ -30,4 +30,8 @@
     public void modificarCreditos(int creditos) {
         this.creditosAsignatura= creditos;
     }
+
+    public void CrearId(){
+        this.idAsignatura= this.nombreAsignatura.substring(0, 4);
+    }
 }
