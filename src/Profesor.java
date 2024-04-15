@@ -30,7 +30,7 @@ public class Profesor {
     }
 
     public void mostrarDatos() {
-        System.out.println("Nombre del profesor: " + nombre + " " + apellido + "Identificacion:"+ idProfesor);
+        System.out.println("Nombre del profesor: " + nombre + " " + apellido + " Identificacion:"+ idProfesor);
     }
     
 }

@@ -1,18 +1,25 @@
 public class Indicaciones {
-    private String reglas;
-    private String enunciado;
+   private String reglas;
+   private String enunciado;
 
-    Indicaciones(String enunciado, String reglas){
-    this.reglas= reglas;
-    this.enunciado=enunciado;
-    }
-    
-    Public String modificarReglas(String reglas){
-    this.reglas= reglas;
-    }
-    
-    Public String modificarEnunciado(String enunciado){
-    this.enunciado= enunciado;
-        }
-    
+   public Indicaciones(String enunciado, String reglas) {
+       this.reglas = reglas;
+       this.enunciado = enunciado;
+   }
+
+   public void modificarReglas(String reglas) {
+       this.reglas = reglas;
+   }
+
+   public void modificarEnunciado(String enunciado) {
+       this.enunciado = enunciado;
+   }
+
+   public String obtenerReglas() {
+       return this.reglas;
+   }
+
+   public String obtenerEnunciado() {
+       return this.enunciado;
+   }
 }
