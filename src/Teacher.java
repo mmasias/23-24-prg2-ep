@@ -30,4 +30,11 @@ public class Teacher {
     public void addSubject(Subject subject){
         this.subject = subject;
     }
+
+    public static void main(String[] args) {
+        
+        Teacher profesor1 = new Teacher("Bryan Baquedano", "Z0996961P");
+        profesor1.addSubject(new Subject("Filosofía", "FIL", 3));
+        profesor1.show();
+    }
 }
