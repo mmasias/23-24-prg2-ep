@@ -15,10 +15,20 @@ public class Asignatura {
     }
 
     public void anadirExamen(Examen examen){
-
+        Examen[] examenesNuevo = new Examen[examenes.length + 1];
+        for(int numero = 0; numero < examenes.length; numero++){
+            examenesNuevo[numero] = examenes[numero];
+        }
+        examenesNuevo[examenes.length] = examen;
+        examenes = examenesNuevo;
     }
 
     public String mostrar(){
-        return "Nombre de la asignatura[" + nombre + "] / profesor[" + profesor + "] / Examen[" + examenes +"] / Codigo[" + codigo + "] / Creditos[" + creditos + "]";
+        String salida = "Nombre del profesor: " + profesor.mostrar();
+        salida += "\n   Asignatura: " + nombre + " - " + codigo + " - " + creditos + " creditos";
+        for (Examen examen : examenes) {
+        salida += "\n     " + examen.mostrar();
+        }
+        return salida;
     }
 }

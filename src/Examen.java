@@ -10,10 +10,19 @@ public class Examen {
     }
 
     public String mostrar(){
-        return "Tipo [" + tipo + "] / profesorVigilante[" + profesorVigilante + "] / Preguntas[" + preguntas +"]";
+        String salida = "Examen: Examen " + tipo + " / Vigilado por Prof.: " + profesorVigilante.mostrar();
+        for (Pregunta pregunta : preguntas) {
+            salida += "\n       " + pregunta.mostrar();
+        }
+        return salida;
     }
 
-    public void añadirPregunta(Pregunta pregunta){
-
+    public void anadirPregunta(Pregunta pregunta){
+        Pregunta[] preguntasNuevo = new Pregunta[preguntas.length + 1];
+        for(int numero = 0; numero < preguntas.length; numero++){
+            preguntasNuevo[numero] = preguntas[numero];
+        }
+        preguntasNuevo[preguntas.length] = pregunta;
+        preguntas = preguntasNuevo;
     }
 }
