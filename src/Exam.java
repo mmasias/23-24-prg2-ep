@@ -27,4 +27,11 @@ public class Exam {
     public Professor responsable() {
         return null;
     }
+
+    public String showQuestion() {
+        for (int i = 0; i < questions.length; i++) {
+            System.out.println("Pregunta" + i + " " + questions[i]);
+        }
+        return null;
+    }
 }
