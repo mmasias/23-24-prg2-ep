@@ -84,3 +84,13 @@ Para iniciar el código se realizó la duda ¿como separo el problema?, luego se
 ## A tener en cuenta
 
 Por alguna razón al formatear el documento, en el Main, los `System.out.println`, cambian de lugar, o mejor dicho, se saltan una línea, no se porque razón pasa esto, lo realiza automáticamente.
+
+# Diagramas UML
+
+- Primer diagrama
+
+![alt text](../images/PrimerDiagramaUML.png)
+
+- Segundo diagrama
+
+![alt text](../images/SegundoDiagramaUML.png)

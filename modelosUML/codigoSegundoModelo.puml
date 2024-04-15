@@ -1,0 +1,39 @@
+```plantuml
+@startuml
+
+class Profesor {
+  - catedratico: String
+  - id: String
+}
+
+class Asignatura {
+  - materia: String
+  - abreviatura: String
+  - creditos: int
+}
+
+class Examen {
+  - nombre: String
+}
+
+class ProfesorSupervisor {
+  - supervisor: String
+  - identificacion: String
+}
+
+class PrimeraPregunta {
+}
+
+class SegundaPregunta {
+}
+
+class TerceraPregunta {
+}
+
+Profesor --|> Asignatura
+Asignatura --|> Examen
+ProfesorSupervisor --|> Examen 
+Examen --|> PrimeraPregunta
+Examen --|> SegundaPregunta
+Examen --|> TerceraPregunta
+@enduml
