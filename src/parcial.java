@@ -1,4 +1,23 @@
- class Teacher {
+class Main {
+    public static void main(String[] args) {
+        Teacher masias = new Teacher("Manuel Masias", "NIE 666999XY");
+        Subject progra2 = new Subject("Programacion 2", "PRG2", 6);
+        masias.assignSubject(progra2);
+
+        Teacher loyda = new Teacher("Loyda Alas", "DNI 9932381231");
+        Exam parcial = new Exam("Examen Parcial", loyda);
+
+        parcial.addQuestion("Vista publica");
+        parcial.addQuestion("Vista privada");
+        parcial.addQuestion("Simulacion");
+        parcial.addTeacherInCharge(loyda);
+
+        masias.addExam(parcial);
+        masias.show();
+    }
+}
+
+class Teacher {
     private String name;
     private String id;
     private Subject subject;
