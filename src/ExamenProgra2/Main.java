@@ -11,9 +11,9 @@ public class Main {
 
         Pregunta p = new Pregunta();
        
-        p.setPregunta1("Vista publica de clases");
-        p.setPregunta2("Vista publica de objetos");
-        p.setPregunta3("Vista privada de clases");
+        p.setPregunta1("Vista publica de clases ");
+        p.setPregunta2("Vista publica de objetos ");
+        p.setPregunta3("Vista privada de clases ");
 
         Examen examen = new Examen(" Examen parcial", asignatura, new Profesor("Loyda", " Alas"),p);
         examen.mostrarExamen();
