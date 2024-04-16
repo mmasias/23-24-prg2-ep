@@ -44,3 +44,24 @@
     }
 }
 
+ class Subject {
+    public String name;
+    public String code;
+    public int credits;
+
+    public Subject(String name, String code, int credits) {
+        this.name = name;
+        this.code = code;
+        this.credits = credits;
+    }
+
+    public Subject(String name, int credits) {
+      this(name, name.substring(0, name.length() - 2), 0);
+    }
+
+    public void show() {
+        System.out.println("Asignatura: " + name + " - " + code + " - " + credits + " creditos");
+    }
+
+}
+
