@@ -7,3 +7,11 @@ class Teacher {
     }
 
 }
+
+class Subject {
+
+    public Subject (String name, String id, int credits, Teacher teacher){
+
+        Subject progra2 = new Subject("Programación 2","PRG2", 6, mMasias);
+    }
+}
