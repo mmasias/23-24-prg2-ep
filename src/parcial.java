@@ -65,3 +65,47 @@
 
 }
 
+class Exam {
+    private String name;
+    private String[] questions = new String[3];
+    private Teacher teacherInCharge;
+
+    public Exam(String name, Teacher teacherInCharge) {
+        this.name = name;
+        this.teacherInCharge = teacherInCharge;
+    }
+
+    public Exam(String name) {
+        this(name, null);
+    }
+
+    public void addTeacherInCharge(Teacher teacher) {
+        this.teacherInCharge = teacher;
+    }
+
+    public void addQuestion(String question) {
+        for (int i = 0; i < questions.length; i++) {
+            if (questions[i] == null) {
+                questions[i] = question;
+                break;
+            }
+        }
+    }
+
+    public void show() {
+        System.out.print("Examen: " + name + " - ");
+        teacherInCharge.show();
+        this.showQuestions();
+    }
+
+    public void showQuestions() {
+        int num = 1;
+        for (int i = 0; i < questions.length; i++) {
+            if (questions[i] != null) {
+                System.out.println("Pregunta " + num + " " + questions[i]);
+                num++;
+            }
+        }
+    }
+}
+
