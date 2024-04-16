@@ -10,4 +10,14 @@ public class Asignatura {
         this.abreviatura = abreviatura;
         this.creditos = creditos;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        if (nombre != null) {
+            this.nombre = nombre;
+        }
+    }
 }

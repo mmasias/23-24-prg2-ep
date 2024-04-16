@@ -8,4 +8,14 @@ public class Vigilante {
         this.nombre = nombre;
         this.DNI = DNI;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        if (nombre != null) {
+            this.nombre = nombre;
+        }
+    }
 }
