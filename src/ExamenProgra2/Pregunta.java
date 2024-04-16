@@ -47,7 +47,7 @@ public class Pregunta {
     }
     
     public String mostrarPreguntas(){
-        return pregunta1+"\n" + pregunta2 +"\n"+ pregunta3;
+        return "Pregunta 1:´´ " + pregunta1+ "´´" + "\n" + "Pregunta 2:´´ "+pregunta2 + "´´" + "\n"+ "Pregunta 3:´´ "+ pregunta3 + "´´";
     }
     
 }

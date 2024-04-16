@@ -44,9 +44,9 @@ public class Examen {
     }
 
     public void mostrarExamen(){
-        System.out.println(asignatura.getProfesorEncargado().mostrarProfesor());
-        System.out.println("Asignatura: "+ asignatura.getNombre()+ " - " + asignatura.getCreditos() + " Creditos");
-        System.out.println("Examen:" + this.getNombre()+ " / Vigilado por: "+ this.profesor.mostrarProfesor());
+        System.out.println("Nombre del profesor: " + asignatura.getProfesorEncargado().mostrarProfesor());
+        System.out.println("Asignatura: "+ asignatura.getNombre()+ " - " + "PRG2"+ " - " +  asignatura.getCreditos() + " Creditos");
+        System.out.println("Examen:" + this.getNombre()+ " / Vigilado por Profª.: "+ this.profesor.mostrarProfesor());
         System.out.println(this.pregunta.mostrarPreguntas());
     }
     
