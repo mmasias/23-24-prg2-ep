@@ -12,7 +12,7 @@ public class Main {
 
         Examen examen = new Examen("Examen Parcial", p, new ProfesorVigilante("Loyda Alas", "433452A"));
         System.out.println("Nombre del profesor: " + asignatura.getProfesor().getNombre() + " - NIE " + asignatura.getProfesor().getDni());
-        System.out.println("Asignatura: " + asignatura.getNombre() + " - PRG2 - " + asignatura.getCreditos() + " Creditos");
+        System.out.println("Asignatura: " + asignatura.getName() + " - PRG2 - " + asignatura.getCreditos() + " Creditos");
         System.out.println(examen.mostrarExamen());
     } 
 }

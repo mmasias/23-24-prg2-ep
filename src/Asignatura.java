@@ -3,10 +3,10 @@ public class Asignatura{
     private int creditos;
     Profesor profesor;
 
-    public String getNombre() {
+    public String getName() {
         return name;
     }
-    public void setNombre(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     public int getCreditos() {
